@@ -187,15 +187,35 @@ button {
     background-repeat: no-repeat;
     background-position: center;
 }
-#toTop {
-    display: none;
+#sidemenu {
     position: fixed;
-    background-image: url(../images/toTop.png);
-    width: 50px;
-    height: 50px;
     top: 5%;
     right: 5%;
     z-index: 4000;
+}
+#sidemenu>li {
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px;
+}
+#sidemenu>li:first-of-type {
+    cursor: pointer;
+}
+#sidemenu>li>img {
+    position: relative;
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+    width: 40px;
+}
+#sidemenu>li>a>img {
+    position: relative;
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+    width: 40px;
+}
+#sidemenu>li:not(:first-of-type) {
+    display: none;
 }
 #alignmid2 {
     width: 1200px;

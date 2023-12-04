@@ -6,7 +6,8 @@ $(function () {
     var $cloudSlider = $("#cloud>ul");
     var $titlecharactor = $statusscreen.next();
     var $blackout = $("#blackout");
-    var $toTop = $blackout.next("a");
+    var $sidemenu = $blackout.next();
+    
     var $loadcharactor = $("#loadcharactor");
     var $designcontainer = $("#designcontainer");
     var $programcontainer = $designcontainer.next();
@@ -17,6 +18,7 @@ $(function () {
     var walkTime = 1600;
     var haloRightTime = 3000;
     var cloudMoveTime = 10000;
+    var sidemenuIndex = false;
     
     function cloudhandler() {
         $cloudSlider.animate({
@@ -25,6 +27,7 @@ $(function () {
             $cloudSlider.removeAttr("style")});
     };
 
+    window.scrollTo(0,0);
     var viewportHeight = 0;
     window.addEventListener("wheel", function (event) {
         event.preventDefault(); // 스크롤막기, 기본 이벤트 제거
@@ -62,12 +65,24 @@ $(function () {
                         $titlecharactor.removeAttr("style").attr("src","images/title_charactor_idle.png"); // 타이틀페이지 캐릭터 원상복구
                         $loadcharactor.animate({top: "0"},400,function(){ // 모험페이지 캐릭터 위에서 걸어옴
                             $(this).attr("src","images/load_charactor_idle.png");
-                            $toTop.show(400);
                         }); // 모험페이지 캐릭터 상태 변화
                     });
             }); // titlepagecharactor 이동 구현
         },400);
-    }); 
+    });
+
+    $sidemenu.children("li:first-of-type").click(function(){
+        if(sidemenuIndex) {
+            $(this).siblings().slideUp();
+            $(this).children("img").attr("src", "images/othermenuicon.png");
+            sidemenuIndex = false
+        }
+        else {
+            $(this).siblings().slideDown();
+            $(this).children("img").attr("src", "images/sidemenuclose.png");
+            sidemenuIndex = true;
+        }
+    });
 
     // 디자인상자
     $designcontainer.children("button").click(function(){

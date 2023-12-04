@@ -1,5 +1,4 @@
 $(function () {
-    var $html = $("html");
     var $headercontainer = $("#headercontainer");
     var $headermenus = $("#mainmenu>li");
     var $mobileButton = $headercontainer.children("header").children("button");
