@@ -1,0 +1,780 @@
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width: 767px) {    
+    #contentcontainer>div:first-of-type>div>div::after, #contentcontainer>div:first-of-type::after, #contentcontainer>div:last-of-type>ul::after {
+        content: ""; display: block; clear: both;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    #navicontainer{
+        position: relative;
+    }
+    #navi {
+    margin-top: calc(100vw / 768 * 100);
+    width: 100%;
+    overflow: hidden;
+    
+    }
+    #navi>div { 
+        position: relative;
+        left: 50%; translate: -50%;
+        background-image: url(../images/submenubackgound.jpg);
+        background-repeat: no-repeat;
+        background-position-x: calc(50% + 100vw / 768 * 65 );
+        background-position-y: top;
+        background-size: calc(100vw / 768 * 1920);
+        width: calc(100vw / 768 * 1920); height: calc(100vw / 768 * 200);
+    }
+    #navi>div>div {
+        position: absolute;
+        top: calc(100vw / 768 * 45);
+        left: 50%; translate: -50%;
+        text-align: center;
+    }
+    #navi>div>div>h2 {
+        font-family: 'Jua', sans-serif;
+        font-size: calc(100vw / 768 * 40);
+        margin-bottom: calc(100vw / 768 * 36);
+    }
+    #navi>div>div>p {
+        font-size: calc(100vw / 768 * 22);
+        font-family: 'ChosunGu', sans-serif;
+    }
+    #navi>div>div>p>button {
+        font-size: calc(100vw / 768 * 14);
+    }
+    #navi>div>div>p>button>span {
+        font-size: calc(100vw / 768 * 22);
+        font-family: 'ChosunGu', sans-serif;
+        
+    }
+    #navi>div>div>p>a {
+        text-decoration: none;
+        color: black;
+    }
+    #navicontainer>ul {
+        display: none;
+        position: absolute;
+        border: solid black 1px;
+        background-color: white;
+        line-height: 1.3em;
+        top: calc(100vw / 768 * 150);
+        translate: -50%;
+        z-index: 200;
+        font-size: calc(100vw / 768 * 16);
+    }
+    #navicontainer>ul:first-of-type {
+        width: calc(100vw / 768 * 80);
+        left: calc(50% - 100vw / 768 * 55);
+    }
+    #navicontainer>ul:last-of-type {
+        width: calc(100vw / 768 * 120);
+        left: calc(50% + 100vw / 768 * 88);
+    }
+    #navicontainer>ul>li {
+        padding: calc(100vw / 768 * 5);
+        box-sizing: border-box;
+    }
+    #navicontainer>ul>li:hover {
+        font-weight: 700;
+        background-color: #cfcfcf;
+        cursor: pointer;
+    }
+
+    #contentcontainer {
+        position: relative;
+        margin-top: calc(100vw / 768 * 50);
+        width: 100%;
+        left: 50%; translate: -50%;
+    }
+    #contentcontainer>div {
+        padding: calc(100vw / 768 * 50);
+        margin-bottom: calc(100vw / 768 * 50);
+    }
+    #contentcontainer>div:first-of-type>div:first-of-type:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(100vw / 768 * 50);
+        right: calc(100vw / 768 * 50);
+        background-image: url(../images/baekdabangphone.png);
+        background-repeat: no-repeat;
+        background-size: calc(100vw / 768 * 250);
+        background-position: top right;
+        opacity: 0.5;
+        width: calc(100vw / 768 * 250); height: calc(100vw / 768 * 500);
+        
+    }
+    #contentcontainer>div:first-of-type>div>h2 {
+        font-family: 'Expo M', sans-serif;
+        font-size: calc(100vw / 768 * 30);
+        margin-bottom: calc(100vw / 768 * 50);
+    }
+    #contentcontainer>div:first-of-type>div>h3 {
+        font-family: 'Jua', sans-serif;
+        font-size: calc(100vw / 768 * 60);
+        margin-bottom: calc(100vw / 768 * 60);
+    }
+    #contentcontainer>div:first-of-type>div>p:first-of-type {
+        font-size: calc(100vw / 768 * 26);
+    }
+    #contentcontainer>div:first-of-type>div>p {
+        font-family: 'ChosunGu', sans-serif;
+        margin-bottom: calc(100vw / 768 * 40);
+        font-size: calc(100vw / 768 * 15);
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:first-of-type>div>div>div {
+        float: left;
+        width: calc(50% - 100vw / 768 * 20);
+        background-color: black;
+        border-radius: calc(100vw / 768 * 10);
+        color: white;
+        font-size: calc(100vw / 768 * 30);
+        background-repeat: no-repeat;
+        line-height: 1.3em;
+        text-align: right;
+        box-sizing: border-box;
+        padding: calc(100vw / 768 * 15);
+        background-position-y: center;
+        margin: calc(100vw / 768 * 15) calc(100vw / 768 * 10);
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    #contentcontainer>div:first-of-type>div>div>div:first-of-type{
+        background-image: url(../images/googleplayicon.png);
+        background-size: calc(100vw / 768 * 66);
+        background-position-x: calc(100vw / 768 * 25);
+    }
+    #contentcontainer>div:first-of-type>div>div>div:last-of-type {
+        background-image: url(../images/appstoreicon.png);
+        background-size: calc(100vw / 768 * 58);
+        background-position-x: calc(100vw / 768 * 24);
+    }
+    #contentcontainer>div:first-of-type>div>div>div>p:first-of-type {
+        font-family: 'ChosunGu', sans-serif;
+    }
+    #contentcontainer>div:first-of-type>img {
+        display: none;
+    }
+
+
+    #contentcontainer>div:last-of-type>div {
+        position: relative;
+        text-align: center;
+        left: 50%; translate: -50%;
+        font-family: 'ChosunGu', sans-serif;
+        margin-bottom: calc(100vw / 768 * 30);
+    }
+    #contentcontainer>div:last-of-type>div>h2 {
+        font-size: calc(100vw / 768 * 40);
+        margin-bottom: calc(100vw / 768 * 30);
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:last-of-type>div>p {
+        font-size: calc(100vw / 768 * 24);
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:last-of-type>ul {
+        position: relative;
+        left: 50%; translate: -50%;
+        width: 100vw;
+    }
+    #contentcontainer>div:last-of-type>ul>li {
+        float: left;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li {
+        position: relative;
+        width: 50%;
+        height: 25vw;
+        padding: calc(100vw / 768 * 25);
+        box-sizing: border-box;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type {
+        background-color: #e6e6e6;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li::before {
+        content: "";
+        display: block;
+        width: calc(25vw - 25px); height: calc(25vw - 25px);
+        position: absolute;
+        top: calc(100vw / 768 * 25);
+        left: calc(100vw / 768 * 25);
+        background-color: white;
+        border-radius: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type::before{
+        background-image: url(../images/pickupordericon.png);
+        background-size: calc(100vw / 768 * 100);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type::before{
+        background-image: url(../images/baedalorder.png);
+        background-size: calc(100vw / 768 * 111);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type {
+        background-color: #cfcfcf;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>h3 {
+        font-family: 'Jua', sans-serif;
+        font-size: calc(100vw / 768 * 36);
+        margin-bottom: calc(100vw / 768 * 15);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>p {
+        font-family: 'ChosunGu', sans-serif;
+        line-height: 1.3em;
+        font-size: calc(100vw / 768 * 18);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div {
+        position: absolute;
+        top: 50%; translate: 0% -50%;
+        right: calc(100vw / 768 * 20);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>img {
+        position: relative;
+        top: 50%; left: 50%; translate: -50% -50%;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li {
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        width: 25%;
+        height: 25vw;
+        text-align: center;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(1) {
+        background-image: url(../images/jeoklipicon.png);
+        background-size: calc(100vw / 768 * 101);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(2) {
+        background-image: url(../images/onesecondpayicon.png);
+        background-size: calc(100vw / 768 * 61);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(3) {
+        background-image: url(../images/giftcardicon.png);
+        background-size: calc(100vw / 768 * 126);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(4) {
+        background-image: url(../images/mymenuicon.png);
+        background-size: calc(100vw / 768 * 74);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li>div {
+        position: relative;
+        top: 50%; translate: 0% -50%;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li>p {
+        position: absolute;
+        bottom: calc(100vw / 768 * 16);
+        left: 50%;
+        translate: -50%;
+        font-family: 'ChosunGu', sans-serif;
+        font-size: calc(100vw / 768 * 16);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {    
+    #contentcontainer>div:first-of-type>div>div::after, #contentcontainer>div:first-of-type::after, #contentcontainer>div:last-of-type>ul::after {
+        content: ""; display: block; clear: both;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    #navicontainer{
+        position: relative;
+    }
+    #navi {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    
+    }
+    #navi>div {
+        position: relative;
+        left: 50%; translate: -50%;
+        background-image: url(../images/submenubackgound.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: calc(100vw / 1200 * 1920);
+        width: calc(100vw / 1200 * 1920); height: calc(100vw / 1200 * 300);
+    }
+    #navi>div>div {
+        position: absolute;
+        top: 10vw;
+        left: 50%; translate: -50%;
+        text-align: center;
+    }
+    #navi>div>div>h2 {
+        font-family: 'Jua', sans-serif;
+        font-size: calc(100vw / 1200 * 40);
+        margin-bottom: calc(100vw / 1200 * 50);
+    }
+    #navi>div>div>p {
+        font-size: calc(100vw / 1200 * 22);
+        font-family: 'ChosunGu', sans-serif;
+    }
+    #navi>div>div>p>button>span {
+        font-size: calc(100vw / 1200 * 22);
+        font-family: 'ChosunGu', sans-serif;
+
+    }
+    #navi>div>div>p>a {
+        text-decoration: none;
+        color: black;
+    }
+    #navicontainer>ul {
+        display: none;
+        position: absolute;
+        border: solid black 1px;
+        background-color: white;
+        line-height: 1.3em;
+        top: 20vw;
+        translate: -50%;
+        z-index: 200;
+        font-size: calc(100vw / 1200 * 16);
+    }
+    #navicontainer>ul:first-of-type {
+        width: calc(100vw / 1200 * 80);
+        left: calc(50% - 100vw / 1200 * 55);
+    }
+    #navicontainer>ul:last-of-type {
+        width: 10vw;
+        left: calc(50% + 100vw / 1200 * 75);
+    }
+    #navicontainer>ul>li {
+        padding: calc(100vw / 1200 * 5);
+        box-sizing: border-box;
+    }
+    #navicontainer>ul>li:hover {
+        font-weight: 700;
+        background-color: #cfcfcf;
+        cursor: pointer;
+    }
+
+    #contentcontainer {
+        position: relative;
+        margin-top: calc(100vw / 1200 * 50);
+        width: 100vw;
+        left: 50%; translate: -50%;
+    }
+    #contentcontainer>div {
+        padding: calc(100vw / 1200 * 50);
+        margin-bottom: calc(100vw / 1200 * 100);
+    }
+    #contentcontainer>div:first-of-type>div>h2 {
+        font-family: 'Expo M', sans-serif;
+        font-size: 2.5vw;
+        margin-bottom: calc(100vw / 1200 * 50);
+    }
+    #contentcontainer>div:first-of-type>div>h3 {
+        font-family: 'Jua', sans-serif;
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+    #contentcontainer>div:first-of-type>div>p {
+        font-family: 'ChosunGu', sans-serif;
+        margin-bottom: calc(100vw / 1200 * 40);
+        font-size: calc(100vw / 1200 * 20);
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:first-of-type>div>p:first-of-type {
+        font-size: 2.5vw;
+    }
+    #contentcontainer>div:first-of-type>div>div>div {
+        float: left;
+        width: calc(100vw / 1200 * 250);
+        background-color: black;
+        border-radius: calc(100vw / 1200 * 10);
+        color: white;
+        font-size: calc(100vw / 1200 * 20);
+        background-repeat: no-repeat;
+        line-height: 1.3em;
+        text-align: right;
+        box-sizing: border-box;
+        padding: calc(100vw / 1200 * 15);
+        background-position-y: center;
+        margin: calc(100vw / 1200 * 15) calc(100vw / 1200 * 10);
+        cursor: pointer;
+    }
+    #contentcontainer>div:first-of-type>div>div>div:first-of-type{
+        background-image: url(../images/googleplayicon.png);
+        background-size: calc(100vw / 1200 * 55);
+        background-position-x: calc(100vw / 1200 * 25);
+    }
+    #contentcontainer>div:first-of-type>div>div>div:last-of-type {
+        background-image: url(../images/appstoreicon.png);
+        background-size: calc(100vw / 1200 * 44);
+        background-position-x: 2.5vw;
+    }
+    #contentcontainer>div:first-of-type>div>div>div>p:first-of-type {
+        font-family: 'ChosunGu', sans-serif;
+    }
+    #contentcontainer>div:first-of-type>img {
+        float: right;
+        width: calc(100vw / 1200 * 350);
+    }
+
+
+    #contentcontainer>div:last-of-type>div {
+        position: relative;
+        text-align: center;
+        left: 50%; translate: -50%;
+        font-family: 'ChosunGu', sans-serif;
+        margin-bottom: 2.5vw;
+    }
+    #contentcontainer>div:last-of-type>div>h2 {
+        font-size: calc(100vw / 1200 * 40);
+        margin-bottom: 2.5vw;
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:last-of-type>div>p {
+        font-size: 2vw;
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:last-of-type>ul {
+        position: relative;
+        left: 50%; translate: -50%;
+        width: calc(100vw / 1200 * 1000);
+    }
+    #contentcontainer>div:last-of-type>ul>li {
+        float: left;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li {
+        position: relative;
+        width: calc(100vw / 1200 * 500);
+        height: calc(100vw / 1200 * 250);
+        padding: calc(100vw / 1200 * 25);
+        box-sizing: border-box;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type {
+        background-color: #e6e6e6;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li::before {
+        content: "";
+        display: block;
+        width: calc(100vw / 1200 * 200); height: calc(100vw / 1200 * 200);
+        position: absolute;
+        top: calc(100vw / 1200 * 25);
+        left: calc(100vw / 1200 * 25);
+        background-color: white;
+        border-radius: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type::before{
+        background-image: url(../images/pickupordericon.png);
+        background-size: calc(100vw / 1200 * 128);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type::before{
+        background-image: url(../images/baedalorder.png);
+        background-size: calc(100vw / 1200 * 145)
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type {
+        background-color: #cfcfcf;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>h3 {
+        font-family: 'Jua', sans-serif;
+        font-size: 2.5vw;
+        margin-bottom: calc(100vw / 1200 * 50);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>p {
+        font-family: 'ChosunGu', sans-serif;
+        line-height: 1.3em;
+        font-size: calc(100vw / 1200 * 20);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div {
+        position: absolute;
+        top: 50%; translate: 0% -50%;
+        right: calc(100vw / 1200 * 40);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>img {
+        position: relative;
+        top: 50%; left: 50%; translate: -50% -50%;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li {
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        width: calc(100vw / 1200 * 250);
+        height: calc(100vw / 1200 * 250);
+        text-align: center;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(1) {
+        background-image: url(../images/jeoklipicon.png);
+        background-size: calc(100vw / 1200 * 131);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(2) {
+        background-image: url(../images/onesecondpayicon.png);
+        background-size: calc(100vw / 1200 * 80);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(3) {
+        background-image: url(../images/giftcardicon.png);
+        background-size: calc(100vw / 1200 * 163);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(4) {
+        background-image: url(../images/mymenuicon.png);
+        background-size: calc(100vw / 1200 * 112);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li>div {
+        position: relative;
+        top: 50%; translate: 0% -50%;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li>p {
+        position: absolute;
+        bottom: calc(100vw / 1200 * 20); left: 50%; translate: -50%;
+        font-family: 'ChosunGu', sans-serif;
+        font-size: calc(100vw / 1200 * 20);
+    }
+}
+@media screen and (min-width: 1200px) {
+    #contentcontainer>div:first-of-type>div>div::after, #contentcontainer>div:first-of-type::after, #contentcontainer>div:last-of-type>ul::after {
+        content: ""; display: block; clear: both;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    #navicontainer{
+        position: relative;
+    }
+    #navi {
+    margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+    
+    }
+    #navi>div {
+        position: relative;
+        left: 50%; translate: -50%;
+        background-image: url(../images/submenubackgound.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1920px; height: 300px;
+    }
+    #navi>div>div {
+        position: absolute;
+        top: 120px;
+        left: 50%; translate: -50%;
+        text-align: center;
+    }
+    #navi>div>div>h2 {
+        font-family: 'Jua', sans-serif;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    #navi>div>div>p {
+        font-size: 22px;
+        font-family: 'ChosunGu', sans-serif;
+    }
+    #navi>div>div>p>button>span {
+        font-size: 22px;
+        font-family: 'ChosunGu', sans-serif;
+
+    }
+    #navi>div>div>p>a {
+        text-decoration: none;
+        color: black;
+    }
+    #navicontainer>ul {
+        display: none;
+        position: absolute;
+        border: solid black 2px;
+        background-color: white;
+        line-height: 1.3em;
+        top: 240px;
+        translate: -50%;
+        z-index: 200;
+    }
+    #navicontainer>ul:first-of-type {
+        width: 80px;
+        left: calc(50% - 55px);
+    }
+    #navicontainer>ul:last-of-type {
+        width: 120px;
+        left: calc(50% + 75px);
+    }
+    #navicontainer>ul>li {
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    #navicontainer>ul>li:hover {
+        font-weight: 700;
+        background-color: #cfcfcf;
+        cursor: pointer;
+    }
+
+    #contentcontainer {
+        position: relative;
+        margin-top: 50px;
+        width: 1200px;
+        left: 50%; translate: -50%;
+    }
+    #contentcontainer>div {
+        padding: 50px;
+        margin-bottom: 100px;
+
+    }
+    #contentcontainer>div:first-of-type>div>h2 {
+        font-family: 'Expo M', sans-serif;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #contentcontainer>div:first-of-type>div>h3 {
+        font-family: 'Jua', sans-serif;
+        font-size: 60px;
+        margin-bottom: 60px;
+    }
+    #contentcontainer>div:first-of-type>div>p {
+        font-family: 'ChosunGu', sans-serif;
+        margin-bottom: 40px;
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:first-of-type>div>p:first-of-type {
+        font-size: 30px;
+    }
+    #contentcontainer>div:first-of-type>div>div>div {
+        float: left;
+        width: 250px;
+        background-color: black;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        background-repeat: no-repeat;
+        line-height: 1.3em;
+        text-align: right;
+        box-sizing: border-box;
+        padding: 15px;
+        background-position-y: center;
+        margin: 15px 10px;
+        cursor: pointer;
+    }
+    #contentcontainer>div:first-of-type>div>div>div:first-of-type{
+        background-image: url(../images/googleplayicon.png);
+        background-position-x: 25px;
+    }
+    #contentcontainer>div:first-of-type>div>div>div:last-of-type {
+        background-image: url(../images/appstoreicon.png);
+        background-position-x: 30px;
+    }
+    #contentcontainer>div:first-of-type>div>div>div>p:first-of-type {
+        font-family: 'ChosunGu', sans-serif;
+    }
+    #contentcontainer>div:first-of-type>img {
+        float: right;
+    }
+
+
+    #contentcontainer>div:last-of-type>div {
+        position: relative;
+        text-align: center;
+        left: 50%; translate: -50%;
+        font-family: 'ChosunGu', sans-serif;
+        margin-bottom: 30px;
+    }
+    #contentcontainer>div:last-of-type>div>h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:last-of-type>div>p {
+        font-size: 24px;
+        line-height: 1.3em;
+    }
+    #contentcontainer>div:last-of-type>ul {
+        position: relative;
+        left: 50%; translate: -50%;
+        width: 1000px;
+    }
+    #contentcontainer>div:last-of-type>ul>li {
+        float: left;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li {
+        position: relative;
+        width: 500px;
+        height: 250px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type {
+        background-color: #e6e6e6;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li::before {
+        content: "";
+        display: block;
+        width: 200px; height: 200px;
+        position: absolute;
+        top: 25px; left: 25px;
+        background-color: white;
+        border-radius: 50%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type::before{
+        background-image: url(../images/pickupordericon.png);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type::before{
+        background-image: url(../images/baedalorder.png);
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type {
+        background-color: #cfcfcf;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>h3 {
+        font-family: 'Jua', sans-serif;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>p {
+        font-family: 'ChosunGu', sans-serif;
+        line-height: 1.3em;
+        font-size: 20px;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div {
+        position: absolute;
+        top: 50%; translate: 0% -50%;
+        right: 40px;
+    }
+    #contentcontainer>div:last-of-type>ul:first-of-type>li>div>img {
+        position: relative;
+        top: 50%; left: 50%; translate: -50% -50%;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li {
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(1) {
+        background-image: url(../images/jeoklipicon.png);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(2) {
+        background-image: url(../images/onesecondpayicon.png);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(3) {
+        background-image: url(../images/giftcardicon.png);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li:nth-of-type(4) {
+        background-image: url(../images/mymenuicon.png);
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li>div {
+        position: relative;
+        top: 50%; translate: 0% -50%;
+    }
+    #contentcontainer>div:last-of-type>ul:last-of-type>li>p {
+        position: absolute;
+        bottom: 20px; left: 50%; translate: -50%;
+        font-family: 'ChosunGu', sans-serif;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,556 @@
+html {
+    overflow: hidden;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+button {
+    border: 0; background: none;
+}
+#titlepage, #alignmid1, #closingpage {
+    height: 100vh;
+}
+#titlepage, #alignmid1, #leftarea>ul>li>img, #rightarea>ul>li, #alignmid2, #loadpage, #craftingarea>ul, #craftingarea>h2, #closingpage, #programarea>ul, #craftingarea, #craftingarea>div, #designbox>img:first-child, #programbox>img:first-child, #craftinganvil>img:first-child {
+    position: relative;
+}
+#alignmid1>h1, #startbutton, #cloud, #titlecharactor, #titlepage>img:last-child, #statusscreen, #rightarea>ul>li>div, #cussorbox, #loadcharactor, #alignmid2>div, #shortcutbox, #closingpage>div, #designcontainer, #programcontainer, #craftingcontainer, #designbox, #programbox, #loadpage>button, #craftingarea>ul>button, #craftingarea>button, #shortcutbox>button, #programarea>ul>button, #craftinganvil, #craftingarea>div>img:nth-child(2), #craftingarea>div>img:nth-child(3), #designbox>img:last-child, #programbox>img:last-child, #craftinganvil>img:last-child {
+    position: absolute;
+}
+#blackout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1100;
+    display: none;
+}
+#titlepage {
+    overflow: hidden;
+}
+#alignmid1 {
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 100;
+}
+#alignmid1>h1 {
+    top: 100px;
+    margin: 0 auto;
+    left: 300px;
+}
+#startbutton {
+    top: 600px;
+    left: 600px;
+    translate: -50% -50%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+#cloud {
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    z-index: 0;
+    width: 1920px;
+}
+#cloud>ul {
+    position: relative;
+    width: 200%;
+}
+#cloud>ul>li {
+    float: left;
+    box-sizing: border-box;
+}
+
+#titlecharactor {
+    bottom: 130px;
+    left: 310px;
+    z-index: 75;
+}
+#titlepage>img:last-child {
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    z-index: 50;
+    width: 1920px;
+}
+
+#statusscreen {
+    display: none;
+    background-image: url(../images/parameterbackground.jpg);
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 957px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 100px;
+    box-sizing: border-box;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    z-index: 150;
+}
+#rightarea,#leftarea {
+    float: left;
+}
+#leftarea {
+    padding-top: 30px;
+    margin-right: 50px;
+}
+#leftarea>img {
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+#leftarea>ul {
+    background-image: url(../images/hobbybackgound.jpg);
+    background-repeat: no-repeat;
+    padding: 10px 20px 20px 20px;
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#leftarea>ul>li {
+    width: 180px;
+}
+#leftarea>ul>li>img {
+    top: 10px
+}
+#rightarea>h2 {
+    margin-bottom: 50px;
+}
+#rightarea>ul {
+    background-image: url(../images/personalitybackgound.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#rightarea>ul>li {
+    margin-bottom: 20px;
+    line-height: 200%;
+}
+#rightarea>ul>li>div {
+    background-image: url(../images/personalitysmallbackgroung.png);
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    width: 204px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+#contactbox {
+    background-image: url(../images/personalitybigbackgroung.png);
+    background-repeat:no-repeat;
+    position: static;
+    width: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 140%;
+    border-radius: 5px;
+}
+#contactbox>li:first-child {
+    font-size: 2.5rem; 
+}
+#contactbox>li:last-child {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+#cussorbox {
+    bottom: 70px;
+    right: 90px;
+}
+#cussorbox>button {    
+    padding: 0;
+    background: none;
+    border: none;
+}
+#cussorbox>button>img {
+    border-radius: 5px;
+}
+#cussorbox>button:first-child {
+    margin-right: 20px;
+}
+#cussorbox>button:active {
+    transform: scale(1.05);
+}
+
+
+#loadpage {
+    background-image: url(../images/loadbackgoundimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#toTop {
+    display: none;
+    position: fixed;
+    background-image: url(../images/toTop.png);
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    right: 5%;
+    z-index: 4000;
+}
+#alignmid2 {
+    width: 1200px;
+    margin: 0 auto;
+    height: 3240px;
+}
+#loadcharactor {
+    left: 630px;
+    transform: scale(-1,1);
+    top: -128px;
+}
+#loadcharactor.firstToDesign {
+    offset: path("M64,64s-389.6,197-272,766.33");
+    offset-rotate: 0deg;
+    animation: firstToDesign 1600ms linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes firstToDesign {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }    
+}
+#loadcharactor.designToSecond {
+    offset: path("M-207.92,830.33c11.17,57.75,76,145.74,157.07,249.67,16.25,20.85,33.15,42.33,50.41,64.35");
+    offset-rotate: 0deg;
+    transform: scale(1,1);
+    animation: designToSecond 1600ms linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes designToSecond {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }    
+}
+#loadcharactor.secondToProgram {
+    offset: path("M-.44,1144.35c145,185,314.62,407.19,329.18,598");
+    offset-rotate: 0deg;
+    transform: scale(1,1);
+    animation: secondToProgram 1600ms linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes secondToProgram {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }    
+}
+#loadcharactor.programToThird {
+    offset: path("M328.74,1742.33C335.6,1837,152.16,1957,15.48,2160c-13.77,20.47-27.08,41.78-39.66,64");
+    offset-rotate: 0deg;
+    animation: programToThird 1600ms linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes programToThird {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }    
+}
+#loadcharactor.thirdToAnvil {
+    offset: path("M-24.18,2224c-73.51,129.77-122.52,290.38-98.65,493.67");
+    offset-rotate: 0deg;
+    animation: thirdToAnvil 1600ms linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes thirdToAnvil {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }    
+}
+#loadcharactor.anvilToHouse {
+    offset: path("M-122.83,2717.67c42.83,216.66,20,275.33,483.57,288.66V2847.67");
+    offset-rotate: 0deg;
+    animation: anvilToHouse 1600ms linear ;
+    animation-fill-mode: forwards;
+}
+@keyframes anvilToHouse {
+    0% {
+        offset-distance: 0%;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        offset-distance: 100%;
+    }    
+}
+#designcontainer, #programcontainer, #craftingconatainer {
+    left: 0; right: 0;
+}
+#designcontainer {
+    top: 350px;
+}
+#designcontainer::after, #programcontainer::after, #cloud>ul::after {
+    display: block; content: ""; clear: both;
+}
+
+#designbox {
+    bottom: 0;
+    left: 280px;
+    transition-duration: 200ms;
+}
+#designbox>img:first-child{
+    z-index: 1000;
+}
+#designbox>img:last-child{
+    width: 400%;
+    opacity: 0.5;
+    z-index: 999;
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+}
+#programcontainer {
+    top: 1300px;
+}
+#programbox {
+    bottom: 210px;
+    right: 110px;
+}
+#programbox>img:first-child{
+    z-index: 1000;
+}
+#programbox>img:last-child{
+    width: 400%;
+    opacity: 0.5;
+    z-index: 999;
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+}
+#craftinganvil {
+    top: 520px;
+    left: 550px;
+    z-index: 10;
+}
+
+#craftinganvil>img:first-child{
+    z-index: 1000;
+}
+#craftinganvil>img:last-child {
+    width: 400%;
+    opacity: 0.5;
+    z-index: 999;
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+}
+
+#designarea {
+    visibility: hidden;
+    opacity: 0;
+    width: 500px;
+    float: right;
+    margin-right: 50px;
+}
+#designarea>h2, #programarea>h2 {
+    margin-bottom: 20px;
+}
+#designarea>ul {
+    padding: 40px;
+    background-image: url(../images/designbackground.jpg);
+    background-repeat: no-repeat;
+}
+#designarea>ul>li,#programarea>ul>li {
+    float: left;
+}
+#designarea>ul>button {
+    
+    bottom: 20px;
+    right: 20px;
+    float: right;
+    margin: 10px;
+    margin-right: 0px;
+}
+#designarea>ul>li:first-child, #programarea>ul>li:first-child, #programarea>ul>li:nth-child(2), #programarea>ul>li:nth-child(4) {
+    margin-right: 20px;
+}
+#designarea>ul::after, #programarea>ul::after, #craftingarea>ul::after, #shortcutbox {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#programarea {
+    visibility: hidden;
+    opacity: 0;
+    width: 700px;
+    float: left;
+    margin-left: 50px;
+}
+#programarea>h2>img {
+    display: block;
+    margin: 0 auto;
+}
+#programarea>ul {
+    background-image: url(../images/programbackgound.jpg);
+    background-repeat: no-repeat;
+}
+#programarea>ul {
+    padding: 25px;
+}
+#programarea>ul>li {
+    margin-bottom: 23px;
+}
+#programarea>ul>li:nth-child(4) {
+    margin-left: 70px;
+}
+#programarea>ul>button {
+    bottom: 20px; right: 20px;
+}
+
+#craftingcontainer {
+    top: 2160px;
+    padding: 50px;
+}
+
+#craftingarea {
+    visibility: hidden;
+    opacity: 0;
+    background-image: url(../images/craftingbigbackgound.jpg);
+    background-repeat: no-repeat;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: -50px;
+    z-index: 2000;
+}
+#craftingarea>h2 {
+    margin-left: 30px;
+    top: 10px;
+    z-index: 200;
+}
+#craftingarea>ul {
+    background-image: url(../images/craftingsmallbackgound.png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 1000px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+#craftingarea>ul>li {
+    position: relative;
+    background-image: url(../images/craftingiconbackgound.png);
+    background-repeat: no-repeat;
+    transition-duration: 2000ms;
+    float: left;
+    padding: 14px;
+    margin: 20px;
+}
+#craftingarea>ul>li.small {
+    transform: scale(0);
+}
+#craftingarea>ul>button {
+    right: 50px;
+    bottom: 30px;
+}
+#craftingarea>div {
+    background-image: url(../images/craftingpageanvil.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 10px;
+    padding-bottom: 157px;
+}
+#craftingarea>div>img:first-child {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    margin: 0 auto;
+}
+#craftingarea>div>img:nth-child(2) {
+    visibility: hidden;
+    top: -200px;
+    right: 300px;
+}
+#craftingarea>div>img:nth-child(3) {
+    visibility: hidden;
+    top: -175px;
+    left: 425px;
+    transform: scale(2);
+}
+#craftingarea>button {
+    bottom: 100px;
+    right: 100px;
+}
+#shortcutbox {
+    visibility: hidden;
+    opacity: 0;
+    background-image: url(../images/shorcutbackgound.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 100px;
+    padding: 25px;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    z-index: 3000;
+}
+#shortcutbox>li:first-child>img {
+    width: 300px;
+    height: auto;
+}
+#shortcutbox>li {
+    float: left;
+    margin: 25px;
+}
+#shortcutbox>li>img {
+    margin-bottom: 50px;
+}
+#shortcutbox>li>a {
+    display: block;
+    background-image: url(../images/shorcutbuttonbackgound.jpg);
+    text-decoration: none;
+    color: black;    
+    text-align: center;
+    padding: 40px 30px;
+    font-size: 60px;
+}
+#shortcutbox>button {
+    right: 20px;
+    top: 20px;
+}
+
+#closingpage {
+    background-image: url(../images/closingbackgound.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    color: white;
+}
+#closingpage>div {
+    top: 650px;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+}
+#closingpage>div>h1 {
+    font-size: 60px;
+    margin: 20px;
+}
+#closingpage>div>p {
+    font-size: 48px;
+    margin: 10px;
+}
+
+
+
+
+

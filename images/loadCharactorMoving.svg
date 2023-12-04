@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594.78 2947.08">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:4px;}
+        </style>
+    </defs>
+    <title>
+        Untitled-1
+    </title>
+    <g id="firstToDesign">
+        <path class="cls-1" d="M64.08,64s-389.6,197-272,766.33" transform="translate(232.04 -61.31)"/>
+    </g>
+    <g id="disignToSecond">
+        <path class="cls-1" d="M-207.92,830.33c11.17,57.75,76,145.74,157.07,249.67,16.25,20.85,33.15,42.33,50.41,64.35" transform="translate(232.04 -61.31)"/>
+    </g>
+    <g id="secondToProgram">
+        <path class="cls-1" d="M-.44,1144.35c145,185,314.62,407.19,329.18,598" transform="translate(232.04 -61.31)"/>
+    </g>
+    <g id="programToThird">
+        <path class="cls-1" d="M328.74,1742.33C335.6,1837,152.16,1957,15.48,2160c-13.77,20.47-27.08,41.78-39.66,64" transform="translate(232.04 -61.31)"/>
+    </g>
+    <g id="thirdToAnvil">
+        <path class="cls-1" d="M-24.18,2224c-73.51,129.77-122.52,290.38-98.65,493.67" transform="translate(232.04 -61.31)"/>
+    </g>
+    <g id="anvilToHouse">
+        <path class="cls-1" d="M-122.83,2717.67c42.83,216.66,20,275.33,483.57,288.66V2847.67" transform="translate(232.04 -61.31)"/>
+    </g>
+</svg>

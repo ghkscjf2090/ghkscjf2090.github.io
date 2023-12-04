@@ -1,0 +1,280 @@
+@media screen and (max-width: 767px) {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #headercontainer {
+    position: fixed; top: 0; left: 0; right: 0;
+    background-color: white;
+    z-index: 1000;
+  }
+  header {
+    width: 100vw;
+    height: calc(100vw / 768 * 100);
+    z-index: 1000;
+  }
+  header>a {
+    padding-left: 1rem;
+    float: left; position: relative;
+    top: 50%; translate: 0% -50%;
+  }
+  header>a>img {
+    width: calc(100vw/768 * 172);
+  }
+  header>p {
+    display: none;
+  }
+  header>p>a:not(:first-of-type)>img {
+    width: 1rem;
+  }
+  header>button {
+    position: absolute;
+    border: none;
+    padding: 0;
+    width: calc(100vw/768 * 50);
+    height: calc(100vw/768 * 50);
+    top: 50%; right: calc(100vw/768 * 25);
+    background-color: transparent;
+    translate: 0 -50%;
+    cursor: pointer;
+  }
+  header>button>img {
+    width: 100%;
+  }
+  #toTopIcon {
+    position: fixed;
+    right: 5%; bottom: 5%;
+    z-index: 1000;
+  }
+  #mainmenu {
+    position: fixed;
+    width: 70%; height: 100%;
+    top: 0; right: -70%;
+    padding-top: calc(100vw / 768 * 100);
+    background-color: white;
+    z-index: 900;
+  }
+  #mainmenu>button {
+    position: absolute;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    right: calc(100vw/768 * 25);
+    top: calc(100vw/768 * 25);
+    width: calc(100vw/768 * 50);
+    height: calc(100vw/768 * 50);
+    cursor: pointer;
+  }
+  #mainmenu>button>img {
+    width: 100%;
+  }
+  #mainmenu>li {
+    font-size: 1.1rem;
+    line-height: 3rem;
+    padding-left: 1em;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  #mainmenu>li>div::after {
+    content: ""; display: block;
+    position: relative;
+    border: solid #e5e5e5 1px;
+    width: 95%;
+  }
+  #mainmenu>li>ul {
+    display: none;
+    overflow: hidden;
+    padding-left: 1em;
+    cursor: default;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+  #mainmenu>li>ul>li>a {
+    display: block;
+    overflow: hidden;
+    line-height: 2.5em;
+  }
+  #mainmenu>li>ul>li:hover {
+    font-weight: 700;
+  }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  header>button, #mainmenu>button {
+    display: none;
+  }
+  #headercontainer {
+    position: fixed; top: 0; left: 0; right: 0;
+    background-color: white;
+    z-index: 1000;
+  }
+  header {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    translate: -50%;
+    height: 100px;
+    z-index: 1000;
+  }
+  header>a {
+    padding-left: 1rem;
+    float: left; position: relative;
+    top: 50%; translate: 0% -50%;
+  }
+  header>a>img {
+    width: calc(100vw / 1200 * 206);
+  }
+  header>p {
+    padding-right: 1rem;
+    text-align: right;
+  }
+  header>p>a:not(:first-of-type)>img {
+    width: 1rem;
+  }
+  header>button {
+    display: none;
+  }
+  #toTopIcon {
+    position: fixed;
+    right: 5%; bottom: 5%;
+    z-index: 1000;
+  }
+  #mainmenu {
+    position: absolute;
+    bottom: 0; right: 0;
+  }
+  #mainmenu>li {
+    position: relative;
+    float: left;
+    font-size: 1.1rem;
+    width: calc(180/1200 * 100vw);
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  #mainmenu>li>ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    padding-top: 1rem;
+    cursor: default;
+    border: #f6de02 4px solid;
+    background-color: #ffe80c;
+    width: calc(180/1200 * 100vw);
+    font-size: calc(100vw / 1200 * 16 * 1.1);
+    box-sizing: border-box;
+  }
+  #mainmenu>li>ul::before {
+    content: "";display: block;
+    left: 50%; top: 0%;
+    translate: -50% -50%;
+    width: 20px; height: 20px;
+    rotate: 45deg; position: absolute;
+    background-color: #f6de02;
+    border: #f6de02 4px solid;
+  }
+  #mainmenu>li>ul>li>a {
+    display: block;
+    overflow: hidden;
+    line-height: 2.5em;
+    background-color: #ffe80c;
+  }
+  #mainmenu>li>ul>li:hover {
+    font-weight: 700;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  header>button, #mainmenu>button {
+    display: none;
+  }
+  
+  #headercontainer {
+    position: fixed; top: 0; left: 0; right: 0;
+    background-color: white;
+    z-index: 1000;
+  }
+  header {
+    position: relative;
+    width: 1200px;
+    left: 50%;
+    translate: -50%;
+    height: 100px;
+    z-index: 1000;
+  }
+  header>a {
+    padding-left: 1rem;
+    float: left; position: relative;
+    top: 50%; translate: 0% -50%;
+  }
+  header>p {
+    padding-right: 1rem;
+    text-align: right;
+  }
+  header>p>a:not(:first-of-type)>img {
+    width: 1rem;
+  }
+  header>button {
+    display: none;
+  }
+  #toTopIcon {
+    position: fixed;
+    right: 5%; bottom: 5%;
+    z-index: 1000;
+  }
+  #mainmenu {
+    position: absolute;
+    bottom: 0; right: 0;
+  }
+  #mainmenu>li {
+    position: relative;
+    float: left;
+    font-size: 1.1rem;
+    width: 180px;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  #mainmenu>li>ul {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    padding-top: 16px;
+    cursor: default;
+    border: #f6de02 4px solid;
+    background-color: #ffe80c;
+    width: 180px;
+    box-sizing: border-box;
+  }
+  #mainmenu>li>ul::before {
+    content: "";display: block;
+    left: 50%; top: 0%;
+    translate: -50% -50%;
+    width: 20px; height: 20px;
+    rotate: 45deg; position: absolute;
+    background-color: #f6de02;
+    border: #f6de02 4px solid;
+  }
+  #mainmenu>li>ul>li>a {
+    display: block;
+    overflow: hidden;
+    line-height: 2.5em;
+    background-color: #ffe80c;
+  }
+  #mainmenu>li>ul>li:hover {
+    font-weight: 700;
+  }
+  
+}

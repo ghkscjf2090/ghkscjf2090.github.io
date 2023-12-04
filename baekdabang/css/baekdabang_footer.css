@@ -1,0 +1,118 @@
+@media screen and (max-width: 767px) {
+  footer::before {
+    position: relative;
+    content: ""; display: block;
+    width: 80%;
+    border: solid black 1px;
+    margin: 30px auto;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    left: 50%; translate: -50%;
+    text-align: center;
+    font-size: calc(100vw / 768 * 16 * 0.8);
+    line-height: 1.5em;
+    margin-top: calc(100vw / 768 * 50);
+    padding-bottom: calc(100vw / 768 * 50);
+  }
+  footer>div>a>img{
+    width: calc(100vw / 768 * 350);
+  }
+  footer>div>div {
+    display: none;
+  }
+  footer>div>span>a:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  footer::before {
+    position: relative;
+    content: ""; display: block;
+    width: 80%;
+    border: solid black 1px;
+    margin: 30px auto;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    left: 50%; translate: -50%;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  footer>div>span {
+    display: none;
+  }
+  footer>div>div {
+    position: absolute;
+    left: calc(50% + 190px);
+    top: 50px;
+    cursor: pointer;
+  }
+  footer>div>div>div {
+    width: 180px;
+    border: solid 1px black;
+    box-sizing: border-box;
+  }
+  footer>div>div>ul {
+    display: none;
+    position: absolute;
+    top: 110%;
+    border: solid 1px black;
+    width: 180px;
+    box-sizing: border-box;
+  }
+  footer>div>div>ul>li:hover {
+    background-color: #d8d8d8;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  footer::before {
+    position: relative;
+    content: ""; display: block;
+    width: 80%;
+    border: solid black 1px;
+    margin: 30px auto;
+  }
+  footer {
+    position: relative;
+    width: 1200px;
+    left: 50%; translate: -50%;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    margin-top: 100px;
+    padding-bottom: 50px;
+  }
+  footer>div>span {
+    display: none;
+  }
+  footer>div>div {
+    position: absolute;
+    left: calc(50% + 190px);
+    top: 50px;
+    cursor: pointer;
+  }
+  footer>div>div>div {
+    width: 180px;
+    border: solid 1px black;
+    box-sizing: border-box;
+  }
+  footer>div>div>ul {
+    display: none;
+    position: absolute;
+    top: 110%;
+    border: solid 1px black;
+    width: 180px;
+    box-sizing: border-box;
+  }
+  footer>div>div>ul>li:hover {
+    background-color: #d8d8d8;
+  }
+}
+  
