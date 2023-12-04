@@ -44,14 +44,14 @@
         margin-bottom: calc(100vw / 768 * 36);
     }
     #navi>div>div>p {
-        font-size: calc(100vw / 768 * 22);
+        font-size: calc(100vw / 768 * 26);
         font-family: 'ChosunGu', sans-serif;
     }
     #navi>div>div>p>button {
-        font-size: calc(100vw / 768 * 14);
+        font-size: calc(100vw / 768 * 20);
     }
     #navi>div>div>p>button>span {
-        font-size: calc(100vw / 768 * 22);
+        font-size: calc(100vw / 768 * 26);
         font-family: 'ChosunGu', sans-serif;
         
     }
@@ -65,18 +65,18 @@
         border: solid black 1px;
         background-color: white;
         line-height: 1.3em;
-        top: calc(100vw / 768 * 150);
+        top: calc(100vw / 768 * 155);
         translate: -50%;
         z-index: 200;
-        font-size: calc(100vw / 768 * 16);
+        font-size: calc(100vw / 768 * 20);
     }
     #navicontainer>ul:first-of-type {
-        width: calc(100vw / 768 * 80);
-        left: calc(50% - 100vw / 768 * 55);
+        width: calc(100vw / 768 * 95);
+        left: calc(50% - 100vw / 768 * 64);
     }
     #navicontainer>ul:last-of-type {
-        width: calc(100vw / 768 * 120);
-        left: calc(50% + 100vw / 768 * 88);
+        width: calc(100vw / 768 * 145);
+        left: calc(50% + 100vw / 768 * 95);
     }
     #navicontainer>ul>li {
         padding: calc(100vw / 768 * 5);
@@ -106,10 +106,10 @@
         right: calc(100vw / 768 * 50);
         background-image: url(../images/baekdabangphone.png);
         background-repeat: no-repeat;
-        background-size: calc(100vw / 768 * 250);
+        background-size: calc(100vw / 768 * 200);
         background-position: top right;
         opacity: 0.5;
-        width: calc(100vw / 768 * 250); height: calc(100vw / 768 * 500);
+        width: calc(100vw / 768 * 200); height: calc(100vw / 768 * 400);
         
     }
     #contentcontainer>div:first-of-type>div>h2 {
@@ -123,12 +123,12 @@
         margin-bottom: calc(100vw / 768 * 60);
     }
     #contentcontainer>div:first-of-type>div>p:first-of-type {
-        font-size: calc(100vw / 768 * 26);
+        font-size: calc(100vw / 768 * 28);
     }
     #contentcontainer>div:first-of-type>div>p {
         font-family: 'ChosunGu', sans-serif;
         margin-bottom: calc(100vw / 768 * 40);
-        font-size: calc(100vw / 768 * 15);
+        font-size: calc(100vw / 768 * 22);
         line-height: 1.3em;
     }
     #contentcontainer>div:first-of-type>div>div>div {
@@ -165,7 +165,9 @@
         display: none;
     }
 
-
+    #contentcontainer>div:last-of-type {
+        padding: 0px;
+    }
     #contentcontainer>div:last-of-type>div {
         position: relative;
         text-align: center;
@@ -194,7 +196,6 @@
         position: relative;
         width: 50%;
         height: 25vw;
-        padding: calc(100vw / 768 * 25);
         box-sizing: border-box;
     }
     #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type {
@@ -203,10 +204,11 @@
     #contentcontainer>div:last-of-type>ul:first-of-type>li::before {
         content: "";
         display: block;
-        width: calc(25vw - 25px); height: calc(25vw - 25px);
+        width: calc(25vw - 100vw / 768 * 50);
+        height: calc(25vw - 100vw / 768 * 50);
         position: absolute;
         top: calc(100vw / 768 * 25);
-        left: calc(100vw / 768 * 25);
+        left: calc(100vw / 768 * 15);
         background-color: white;
         border-radius: 50%;
         background-position: center center;
@@ -214,11 +216,11 @@
     }
     #contentcontainer>div:last-of-type>ul:first-of-type>li:first-of-type::before{
         background-image: url(../images/pickupordericon.png);
-        background-size: calc(100vw / 768 * 100);
+        background-size: calc(100vw / 768 * 90);
     }
     #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type::before{
         background-image: url(../images/baedalorder.png);
-        background-size: calc(100vw / 768 * 111);
+        background-size: calc(100vw / 768 * 105);
     }
     #contentcontainer>div:last-of-type>ul:first-of-type>li:last-of-type {
         background-color: #cfcfcf;
@@ -231,12 +233,12 @@
     #contentcontainer>div:last-of-type>ul:first-of-type>li>div>p {
         font-family: 'ChosunGu', sans-serif;
         line-height: 1.3em;
-        font-size: calc(100vw / 768 * 18);
+        font-size: calc(100vw / 768 * 20);
     }
     #contentcontainer>div:last-of-type>ul:first-of-type>li>div {
         position: absolute;
         top: 50%; translate: 0% -50%;
-        right: calc(100vw / 768 * 20);
+        left: calc(100vw / 768 * 170);
     }
     #contentcontainer>div:last-of-type>ul:first-of-type>li>div>img {
         position: relative;

@@ -1,6 +1,7 @@
 $(function () {
     var $html = $("html");
     var $statusscreen = $("#statusscreen");
+    var $startbutton = $statusscreen.prev();
     var $prevbutton = $("#cussorbox>button:first-child");
     var $cloudSlider = $("#cloud>ul");
     var $titlecharactor = $statusscreen.next();
@@ -15,11 +16,12 @@ $(function () {
     var parameter;
     var walkTime = 1600;
     var haloRightTime = 3000;
+    var cloudMoveTime = 10000;
     
     function cloudhandler() {
         $cloudSlider.animate({
             marginLeft: "-100%"
-        },10000,"linear",function () {
+        },cloudMoveTime,"linear",function () {
             $cloudSlider.removeAttr("style")});
     };
 
@@ -29,25 +31,23 @@ $(function () {
     }, { passive: false }); // 패시브 모드 해제
 
     cloudhandler(); // 첫 구름이동 구현
-    setInterval(cloudhandler,10000); //구름이동구현
+    setInterval(cloudhandler,cloudMoveTime); //구름이동구현
 
     // 시작버튼
-    $("#startbutton").click(function(){
-        console.log("startbuttonclicked");
+    $startbutton.click(function(){
         $statusscreen.fadeIn(400);
     }); // statusscreen 표시
 
     // 스테이터스창 이전버튼
     $prevbutton.click(function(){
-        console.log("statusprevbuttonclicked");
         $statusscreen.fadeOut(400);
     }); // statusscreen 사라짐
     
     // 스테이터스창 다음버튼
     $prevbutton.next().click(function(){
         viewportHeight = window.innerHeight;
-        console.log("statusnextbuttonclicked");
         $prevbutton.trigger("click"); // statusscreen 사라짐
+
         setTimeout(function(){
             $titlecharactor.attr("src","images/title_charactor_walk.gif") // 캐릭터 상태 변화
             .animate({left:530},1000).animate({bottom:-64},1000,function(){ // 캐릭터 이동
@@ -74,7 +74,7 @@ $(function () {
         $loadcharactor.attr("src","images/load_charactor_walk.gif").addClass("firstToDesign");//상자앞까지 걸어감
         parameter = this;
         setTimeout(function(){
-            $loadcharactor.attr("src","images/load_charactor_grap.png"); //상자앞 도착후 상자 여는모션
+            $loadcharactor.attr("src","images/load_charactor_grap.png");  //상자앞 도착후 상자 여는모션            
             boxClicked(parameter); // 박스 오픈 -> 디자인창 팝업
             setTimeout(function(){
                 $loadcharactor.attr("src","images/load_charactor_V.png"); // 박스 오픈후 v모션

@@ -93,7 +93,7 @@
   }
   #menucontainer>div>div>div>ul>li>a>p {
     position: relative; z-index: 100;
-    font-size: calc(100vw / 768 * 16);
+    font-size: calc(100vw / 768 * 22);
   }
   #menucontainer>div>div>div>ul>li>a>img {
     height: calc(100vw / 768 * 234); position: relative; z-index: 50;
