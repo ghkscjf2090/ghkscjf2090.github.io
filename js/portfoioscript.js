@@ -20,6 +20,15 @@ $(function () {
     var cloudMoveTime = 10000;
     var sidemenuIndex = false;
     
+    console.log($html.width());
+    console.log($html.height());
+
+    if ($html.width()!=1920) {
+        alert("이 화면은 1920x1080에 맞춰 제작되었습니다");        
+    } else {
+        
+    }
+    
     function cloudhandler() {
         $cloudSlider.animate({
             marginLeft: "-100%"
